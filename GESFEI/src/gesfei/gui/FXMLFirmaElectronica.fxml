@@ -9,24 +9,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="856.0" prefWidth="1254.0" style="-fx-background-color: #1B1E23;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gesfei.controllers.FXMLFirmaElectronicaController">
+<AnchorPane id="AnchorPane" prefHeight="729.0" prefWidth="1254.0" style="-fx-background-color: #1B1E23;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gesfei.controllers.FXMLFirmaElectronicaController">
    <children>
-      <Text fill="WHITE" layoutX="360.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Última actualización:  " wrappingWidth="324.0">
+      <Text fill="WHITE" layoutX="364.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Última actualización:  " wrappingWidth="324.0">
          <font>
             <Font name="System Italic" size="33.0" />
          </font>
       </Text>
-      <Button layoutX="474.0" layoutY="693.0" mnemonicParsing="false" onAction="#actualizarFirma" prefHeight="45.0" prefWidth="311.0" style="-fx-background-color: #2A451B;" text="Actualizar" textFill="WHITE">
+      <Button layoutX="474.0" layoutY="584.0" mnemonicParsing="false" onAction="#actualizarFirma" prefHeight="45.0" prefWidth="311.0" style="-fx-background-color: #2A451B;" text="Actualizar" textFill="WHITE">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
       </Button>
-      <Button layoutX="471.0" layoutY="454.0" mnemonicParsing="false" onAction="#subirFirma" prefHeight="28.0" prefWidth="311.0" style="-fx-background-color: #8D4E09;" text="Subir firma" textFill="WHITE">
+      <Button layoutX="473.0" layoutY="428.0" mnemonicParsing="false" onAction="#subirFirma" prefHeight="28.0" prefWidth="311.0" style="-fx-background-color: #8D4E09;" text="Subir firma" textFill="WHITE">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
       </Button>
-      <Text fx:id="txtFechaActualizacion" fill="#ff6d6d" layoutX="684.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="210.13671875">
+      <Text fx:id="txtFechaActualizacion" fill="#ff6d6d" layoutX="688.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="210.13671875">
          <font>
             <Font name="System Italic" size="33.0" />
          </font>
@@ -50,7 +50,6 @@
             <Font name="Franklin Gothic Demi" size="38.0" />
          </font>
       </Text>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="87.0" layoutY="769.0" stroke="#f8f8f8" strokeType="INSIDE" width="1259.0" />
       <ImageView fx:id="ivFirma" fitHeight="150.0" fitWidth="504.0" layoutX="374.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

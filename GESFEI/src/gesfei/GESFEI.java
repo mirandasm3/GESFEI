@@ -19,7 +19,7 @@ public class GESFEI extends Application {
         
         Scene scene = new Scene(root);
         
-        stage.setTitle("Prueba");
+        stage.setTitle("Menú principal");
         stage.setScene(scene);
         stage.show();
     }

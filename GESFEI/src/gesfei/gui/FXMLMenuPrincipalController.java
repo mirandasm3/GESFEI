@@ -1,5 +1,5 @@
 
-package gesfei.controllers;
+package gesfei.gui;
 
 import gesfei.util.Utilidades;
 import java.io.IOException;
