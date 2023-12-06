@@ -15,7 +15,7 @@ public class GESFEI extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("gui/FXMLPrueba.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("gui/FXMLMenuPrincipal.fxml"));
         
         Scene scene = new Scene(root);
         

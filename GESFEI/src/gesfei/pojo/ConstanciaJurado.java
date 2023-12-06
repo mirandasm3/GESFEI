@@ -1,6 +1,8 @@
 
 package gesfei.pojo;
 
+import java.io.File;
+
 /**
  *
  * @author diana
@@ -17,8 +19,8 @@ public class ConstanciaJurado extends Constancia{
     String resultadoObtenido;
     String fechaExpedicion;
 
-    public ConstanciaJurado(int idConstanciaJurado, String director, String puesto, String licenciatura, String alumnos, String tituloTrabajo, String modalidad, String fechaPresentacion, String resultadoObtenido, String fechaExpedicion, int idConstancia, boolean solicitudModificacion, boolean generada) {
-        super(idConstancia, solicitudModificacion, generada);
+    public ConstanciaJurado(int idConstanciaJurado, String director, String puesto, String licenciatura, String alumnos, String tituloTrabajo, String modalidad, String fechaPresentacion, String resultadoObtenido, String fechaExpedicion, int idConstancia, String nombreAcademico, String apellidosAcademico, byte[] firmaElectronica) {
+        super(idConstancia, nombreAcademico, apellidosAcademico, firmaElectronica);
         this.idConstanciaJurado = idConstanciaJurado;
         this.director = director;
         this.puesto = puesto;
@@ -42,6 +44,30 @@ public class ConstanciaJurado extends Constancia{
         this.fechaPresentacion = fechaPresentacion;
         this.resultadoObtenido = resultadoObtenido;
         this.fechaExpedicion = fechaExpedicion;
+    }
+
+    public String getNombreAcademico() {
+        return nombreAcademico;
+    }
+
+    public void setNombreAcademico(String nombreAcademico) {
+        this.nombreAcademico = nombreAcademico;
+    }
+
+    public String getApellidosAcademico() {
+        return apellidosAcademico;
+    }
+
+    public void setApellidosAcademico(String apellidosAcademico) {
+        this.apellidosAcademico = apellidosAcademico;
+    }
+
+    public byte[] getFirmaElectronica() {
+        return firmaElectronica;
+    }
+
+    public void setFirmaElectronica(byte[] firmaElectronica) {
+        this.firmaElectronica = firmaElectronica;
     }
 
     public ConstanciaJurado() {
@@ -151,19 +177,35 @@ public class ConstanciaJurado extends Constancia{
         this.generada = generada;
     }
 
-    public PersonalUV getAcademico() {
-        return academico;
+    public int getIdpersonaluv() {
+        return idpersonaluv;
     }
 
-    public void setAcademico(PersonalUV academico) {
-        this.academico = academico;
+    public void setIdpersonaluv(int idpersonaluv) {
+        this.idpersonaluv = idpersonaluv;
     }
 
-    public FirmaElectronica getFirma() {
-        return firma;
+    public int getIdfirmaelectronica() {
+        return idfirmaelectronica;
     }
 
-    public void setFirma(FirmaElectronica firma) {
-        this.firma = firma;
+    public void setIdfirmaelectronica(int idfirmaelectronica) {
+        this.idfirmaelectronica = idfirmaelectronica;
+    }
+
+    public File getConstanciaPDF() {
+        return constanciaPDF;
+    }
+
+    public void setConstanciaPDF(File constanciaPDF) {
+        this.constanciaPDF = constanciaPDF;
+    }
+
+    public String getNombrePDF() {
+        return nombrePDF;
+    }
+
+    public void setNombrePDF(String nombrePDF) {
+        this.nombrePDF = nombrePDF;
     }
 }

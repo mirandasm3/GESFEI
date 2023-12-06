@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="856.0" prefWidth="1254.0" style="-fx-background-color: #1B1E23;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gesfei.controllers.FXMLConsultarConstanciasPendientesController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="87.0" layoutY="-10.0" stroke="#f8f8f8" strokeType="INSIDE" width="1259.0" />
+      <Text layoutX="121.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Constancias pendientes" wrappingWidth="430.13671875">
+         <font>
+            <Font name="Franklin Gothic Demi" size="38.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="1.0" mnemonicParsing="false" onAction="#volver" prefHeight="65.0" prefWidth="94.0" style="-fx-background-color: #f8f8f8;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-back-502.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="912.0" layoutY="784.0" mnemonicParsing="false" onAction="#consultarConstancia" prefHeight="28.0" prefWidth="311.0" style="-fx-background-color: #2A451B;" text="Consultar constancia" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="36.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Constancias de impartición" wrappingWidth="363.13671875">
+         <font>
+            <Font name="Franklin Gothic Demi" size="21.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tvImparticion" layoutX="36.0" layoutY="243.0" prefHeight="224.0" prefWidth="557.0">
+        <columns>
+          <TableColumn fx:id="clDirectorImparticion" prefWidth="169.0" text="Director" />
+            <TableColumn fx:id="clPeriodoImparticion" prefWidth="185.0" text="Periodo de impartición" />
+            <TableColumn fx:id="clProgramaEdu" prefWidth="202.0" text="Programa educativo" />
+        </columns>
+      </TableView>
+      <Text fill="WHITE" layoutX="666.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Constancias de proyecto" wrappingWidth="363.13671875">
+         <font>
+            <Font name="Franklin Gothic Demi" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="36.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Constancias PLADEA" wrappingWidth="363.13671875">
+         <font>
+            <Font name="Franklin Gothic Demi" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="666.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Constancias de jurado" wrappingWidth="363.13671875">
+         <font>
+            <Font name="Franklin Gothic Demi" size="21.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tvJurado" layoutX="666.0" layoutY="243.0" prefHeight="224.0" prefWidth="557.0">
+         <columns>
+            <TableColumn fx:id="clDirectorJurado" prefWidth="169.0" text="Director" />
+            <TableColumn fx:id="clPuesto" prefWidth="185.0" text="Puesto" />
+            <TableColumn fx:id="clLicenciatura" prefWidth="202.0" text="Licenciatura" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tvPladea" layoutX="36.0" layoutY="537.0" prefHeight="224.0" prefWidth="557.0">
+         <columns>
+            <TableColumn fx:id="clDirectorPladea" prefWidth="169.0" text="Director" />
+            <TableColumn fx:id="clContribucion" prefWidth="185.0" text="Fecha de contribución" />
+            <TableColumn fx:id="clExpedicion" prefWidth="202.0" text="Fecha de expedición" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tvProyecto" layoutX="666.0" layoutY="537.0" prefHeight="224.0" prefWidth="557.0">
+         <columns>
+            <TableColumn fx:id="clDirectorProyecto" prefWidth="169.0" text="Director" />
+            <TableColumn fx:id="clProyecto" prefWidth="185.0" text="Proyecto realizado" />
+            <TableColumn fx:id="clLugar" prefWidth="202.0" text="Lugar" />
+         </columns>
+      </TableView>
+      <Button layoutX="527.0" layoutY="113.0" mnemonicParsing="false" onAction="#buscarConstancias" prefHeight="47.0" prefWidth="66.0" style="-fx-background-color: #8D4E09;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-search-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ComboBox fx:id="cbPeriodo" layoutX="36.0" layoutY="113.0" prefHeight="47.0" prefWidth="472.0" promptText="Periodo escolar" />
+   </children>
+</AnchorPane>

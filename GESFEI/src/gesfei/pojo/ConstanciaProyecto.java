@@ -1,6 +1,8 @@
 
 package gesfei.pojo;
 
+import java.io.File;
+
 /**
  *
  * @author diana
@@ -14,8 +16,8 @@ public class ConstanciaProyecto extends Constancia{
     String nombreInvolucrados;
     String impactoObtenido;
 
-    public ConstanciaProyecto(int idConstanciaProyecto, String director, String proyectoRealizado, String duracion, String lugar, String nombreInvolucrados, String impactoObtenido, int idConstancia, boolean solicitudModificacion, boolean generada) {
-        super(idConstancia, solicitudModificacion, generada);
+    public ConstanciaProyecto(int idConstanciaProyecto, String director, String proyectoRealizado, String duracion, String lugar, String nombreInvolucrados, String impactoObtenido, int idConstancia, String nombreAcademico, String apellidosAcademico, byte[] firmaElectronica) {
+        super(idConstancia, nombreAcademico, apellidosAcademico, firmaElectronica);
         this.idConstanciaProyecto = idConstanciaProyecto;
         this.director = director;
         this.proyectoRealizado = proyectoRealizado;
@@ -33,6 +35,30 @@ public class ConstanciaProyecto extends Constancia{
         this.lugar = lugar;
         this.nombreInvolucrados = nombreInvolucrados;
         this.impactoObtenido = impactoObtenido;
+    }
+
+    public String getNombreAcademico() {
+        return nombreAcademico;
+    }
+
+    public void setNombreAcademico(String nombreAcademico) {
+        this.nombreAcademico = nombreAcademico;
+    }
+
+    public String getApellidosAcademico() {
+        return apellidosAcademico;
+    }
+
+    public void setApellidosAcademico(String apellidosAcademico) {
+        this.apellidosAcademico = apellidosAcademico;
+    }
+
+    public byte[] getFirmaElectronica() {
+        return firmaElectronica;
+    }
+
+    public void setFirmaElectronica(byte[] firmaElectronica) {
+        this.firmaElectronica = firmaElectronica;
     }
 
     public ConstanciaProyecto() {
@@ -118,19 +144,35 @@ public class ConstanciaProyecto extends Constancia{
         this.generada = generada;
     }
 
-    public PersonalUV getAcademico() {
-        return academico;
+    public int getIdpersonaluv() {
+        return idpersonaluv;
     }
 
-    public void setAcademico(PersonalUV academico) {
-        this.academico = academico;
+    public void setIdpersonaluv(int idpersonaluv) {
+        this.idpersonaluv = idpersonaluv;
     }
 
-    public FirmaElectronica getFirma() {
-        return firma;
+    public int getIdfirmaelectronica() {
+        return idfirmaelectronica;
     }
 
-    public void setFirma(FirmaElectronica firma) {
-        this.firma = firma;
+    public void setIdfirmaelectronica(int idfirmaelectronica) {
+        this.idfirmaelectronica = idfirmaelectronica;
+    }
+
+    public File getConstanciaPDF() {
+        return constanciaPDF;
+    }
+
+    public void setConstanciaPDF(File constanciaPDF) {
+        this.constanciaPDF = constanciaPDF;
+    }
+
+    public String getNombrePDF() {
+        return nombrePDF;
+    }
+
+    public void setNombrePDF(String nombrePDF) {
+        this.nombrePDF = nombrePDF;
     }
 }

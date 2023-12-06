@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="856.0" prefWidth="1254.0" style="-fx-background-color: #1B1E23;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gesfei.controllers.FXMLConsultarConstanciasPDFController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="87.0" stroke="#f8f8f8" strokeType="INSIDE" width="1254.0" />
+      <TableView fx:id="tvConstanciaPDF" layoutX="61.0" layoutY="238.0" prefHeight="391.0" prefWidth="1109.0">
+        <columns>
+          <TableColumn fx:id="clnombrePDF" prefWidth="1108.0" text="Nombre constancia" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cbPeriodo" layoutX="61.0" layoutY="121.0" prefHeight="43.0" prefWidth="556.0" promptText="Periodo escolar" />
+      <Button layoutX="859.0" layoutY="657.0" mnemonicParsing="false" onAction="#consultarPDF" prefHeight="28.0" prefWidth="311.0" style="-fx-background-color: #2A451B;" text="Consultar PDF" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Text layoutX="108.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Historial de constancias" wrappingWidth="430.13671875">
+         <font>
+            <Font name="Franklin Gothic Demi" size="38.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#volver" prefHeight="65.0" prefWidth="94.0" style="-fx-background-color: #f8f8f8;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-back-502.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="635.0" layoutY="119.0" mnemonicParsing="false" onAction="#buscarPDF" prefHeight="47.0" prefWidth="66.0" style="-fx-background-color: #8D4E09;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-search-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="87.0" layoutY="769.0" stroke="#f8f8f8" strokeType="INSIDE" width="1254.0" />
+   </children>
+</AnchorPane>
